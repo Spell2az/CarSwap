@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+        
+        
+    </asp:ContentPlaceHolder>
+    <link href="App_Assets/style/style.css" rel="stylesheet" />
+</head>
+<body>
+<header>
+    <div class="row">
+        
+        <div class="nav-logo">
+            <a class="nav-logo" href="#"><img src="App_Assets/img/car-small.svg"><span>Car Swap</span></a>
+        </div>
+        <ul class="main-nav">
+           
+                
+                <li>
+                    <a href="#">Wishlist</a>
+                </li>
+                <li>
+                    <a href="#">Offers</a>
+                </li>
+                <li><a href="#">Membership</a></li>
+            </ul>
+        
+        
+    </div>
+</header> 
+        
+    
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        
+    </form>
+</body>
+</html>
