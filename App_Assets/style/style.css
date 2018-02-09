@@ -18,6 +18,7 @@
 
 body {
     color: rgb(221, 221, 221);
+    background: #bbb;
 }
 
 header {
@@ -87,7 +88,7 @@ header {
 
 
 .my-content {
-    height: 50rem;
+    height: 25rem;
 }
 
 .nav-logo {
@@ -96,7 +97,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    float: left;
+    float: left !important;
     margin-top: 50px
 }
 
@@ -110,4 +111,9 @@ header {
     padding-left: 1rem;
     text-decoration: none;
     
+}
+
+
+.nav-wrapper {
+    float: right;
 }

@@ -1,5 +1,8 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
 
+<%@ Register Src="~/UserControls/SignUp.ascx" TagPrefix="uc1" TagName="SignUp" %>
+
+
 <!DOCTYPE html>
 
 <html>
@@ -9,16 +12,21 @@
         
         
     </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="App_Assets/style/style.css" rel="stylesheet" />
 </head>
 <body>
-<header>
-    <div class="row">
+
+    <form id="form1" runat="server">
+        
+        <header class="container-fluid">
+    <div class="">
         
         <div class="nav-logo">
             <a class="nav-logo" href="#"><img src="App_Assets/img/car-small.svg"><span>Car Swap</span></a>
         </div>
-        <ul class="main-nav">
+        
+        <ul class="main-nav float-right">
            
                 
                 <li>
@@ -28,20 +36,44 @@
                     <a href="#">Offers</a>
                 </li>
                 <li><a href="#">Membership</a></li>
+                <li><a href="#">Login</a>
+                    <asp:Panel ID="Panel1" runat="server">
+                        <div>
+                            <label>Email</label>
+                            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                        </div>
+                        <div>
+                            <label>Password</label>
+                            <asp:TextBox style="background: transparent; color: white; border-radius: 3px;" ID="TextBox2" type="password" runat="server"></asp:TextBox>
+                        </div>
+                        <div>
+                            <asp:Button runat="server" Text="Log-in"/>
+                        </div>
+                        
+                    </asp:Panel>
+
+                </li>
+                   
+                   
             </ul>
         
         
     </div>
-</header> 
+    </header> 
         
     
-    <form id="form1" runat="server">
+    
     <div>
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
-        
+            
         </asp:ContentPlaceHolder>
+        
+        <uc1:SignUp runat="server" ID="SignUp" />
     </div>
         
     </form>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
