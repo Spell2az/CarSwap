@@ -1,2 +1,32 @@
-﻿body {
+﻿header {
+    background: url("../../img/lamborghini_dark-wallpaper-1920x1080.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+#hero-title{
+  
+    font-family: Orbitron;
+    color: #FFF;
+    font-size:7rem;
+    margin: 2rem;
+    /*ext-decoration: underline;*/
+    letter-spacing: 2px;
+}
+
+#hero-slogan{
+   
+    font-family: Orbitron;
+    color: #FFF;
+    font-size:2rem;
+    margin: 6rem;
+    letter-spacing: 2px;
 }

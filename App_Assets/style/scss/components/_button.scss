@@ -1,0 +1,33 @@
+﻿.btn-header{
+    margin-top:55rem;
+    
+    
+    cursor:pointer;
+    
+    padding: 1.5rem 2rem;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .2s;
+    & p {
+        color: white;
+    }
+
+    & i{
+        color: #3b3b3b;
+        font-size: 5rem;
+        margin-top: -2rem;
+        transition: all .2s;
+    }
+
+    &:active,
+    &:hover{
+        transform: scale(1.1) translateY(-3px);
+        
+        & i {
+            transform: translateY(5px);
+            color: #FFF;
+        }
+    }
+}  

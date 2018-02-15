@@ -1,7 +1,11 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
 
 <%@ Register Src="~/UserControls/SignUp.ascx" TagPrefix="uc1" TagName="SignUp" %>
-<%@ Register Src="~/UserControls/Header.ascx" TagPrefix="uc1" TagName="Header" %>
+
+<%@ Register Src="~/UserControls/Navbar.ascx" TagPrefix="uc1" TagName="Navbar" %>
+<%@ Register Src="~/UserControls/Login-form.ascx" TagPrefix="uc1" TagName="Loginform" %>
+
+
 
 
 
@@ -9,36 +13,52 @@
 
 <html>
 <head runat="server">
-    <title></title>
+    <title>
+        Car Swap
+    </title>
     <asp:ContentPlaceHolder id="head" runat="server">
         
         
     </asp:ContentPlaceHolder>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="App_Assets/style/css/style.css" rel="stylesheet" />
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet"/>
+    <link href="App_Assets/style/css/style.css" rel="stylesheet" runat="server"/>
 </head>
 <body>
-
+<div class="conainer-fluid">
     <form id="form1" runat="server">
-        <div class="conainer-fluid">
-            <uc1:Header runat="server" ID="Header" />
+        
+            <header>
+                <uc1:Navbar runat="server" id="Navbar" />
+                
+                <h1 id="hero-title">Car Swap</h1>
+                <h3 id="hero-slogan">Build your dream car colleciton with us.</h3>
+                <a  class="btn-header">
+                    <p>Find out more</p>
+                    <i class="icon ion-ios-arrow-down"></i>
+                </a>
+                <uc1:Loginform runat="server" ID="Loginform" />
+            </header>
 
-        </div>  
+  
       
         
     
     
-    <div>
+    <div style="height: 700px;">
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
             
         </asp:ContentPlaceHolder>
         
-        <uc1:SignUp runat="server" ID="SignUp"/>
+       
     </div>
-        
+        <uc1:SignUp runat="server" ID="SignUp"/>
     </form>
+</div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="App_Assets/js/animations.js"></script>
 </body>
+
 </html>

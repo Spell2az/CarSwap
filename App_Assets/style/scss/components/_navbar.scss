@@ -1,0 +1,89 @@
+﻿.nav {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    position:fixed;
+    right: -16rem;
+    top: 5rem;
+    width:16rem;
+    margin: 0 auto;
+    transition: all 0.2s;
+    background: rgba(0,0,0,0.65);
+    border-radius: 2px;
+    /*animation-name: menu;
+    animation-duration: 4s;*/
+    /*border-bottom: 1px solid white;*/
+
+    & a:link,
+    & a:visited {
+        text-decoration: none;
+        color: #ccc;
+        display: block;
+        font-size: 1.6rem;
+        margin:2rem 4rem;
+        transition: all 0.2s;
+     }
+
+     
+    & a:hover,
+    & a:active {
+        color: #fff;
+        transform: scale(1.05);
+     }
+
+    /*&::after{
+        content: "";
+        border-bottom: 1px solid white;
+        display:block;
+        width: 100%;
+        position: absolute;
+        top: 6rem;
+    }*/
+
+    & i {
+        
+    position:absolute;
+    color: white;
+    cursor: pointer;
+    font-size: 3rem;
+
+    &:hover{
+        transform: scale(1.1);
+    }
+    }
+
+    a::after{
+        border-bottom: 1px solid white;
+        content:"";
+        display:block;
+        width: 12rem;
+    }
+}
+
+
+.title{
+    font-family: Lobster;
+}
+
+.menu-open {
+    
+    animation-name: menu;
+    animation-duration: 4s;
+    right: 0rem;
+}
+
+#show-bars{
+    position: fixed;
+    top: 3rem;
+    right: 7rem;
+    color: white;
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+
+
+@keyframes move {
+    0% { right: -16rem;}
+    100% { right: 0rem; }
+}

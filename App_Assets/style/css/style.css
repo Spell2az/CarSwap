@@ -1,5 +1,6 @@
-﻿@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Lobster");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Lobster");
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Orbitron:400,500,700");
 /*
 $breakpoint arguments:
 - phone
@@ -31,12 +32,210 @@ body {
   box-sizing: border-box; }
 
 body {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Orbitron", sans-serif;
   font-weight: 400;
   /*font-size: 16px;*/ }
 
+.nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  right: -16rem;
+  top: 5rem;
+  width: 16rem;
+  margin: 0 auto;
+  transition: all 0.2s;
+  background: rgba(0, 0, 0, 0.65);
+  border-radius: 2px;
+  /*animation-name: menu;
+    animation-duration: 4s;*/
+  /*border-bottom: 1px solid white;*/
+  /*&::after{
+        content: "";
+        border-bottom: 1px solid white;
+        display:block;
+        width: 100%;
+        position: absolute;
+        top: 6rem;
+    }*/ }
+  .nav a:link,
+  .nav a:visited {
+    text-decoration: none;
+    color: #ccc;
+    display: block;
+    font-size: 1.6rem;
+    margin: 2rem 4rem;
+    transition: all 0.2s; }
+  .nav a:hover,
+  .nav a:active {
+    color: #fff;
+    transform: scale(1.05); }
+  .nav i {
+    position: absolute;
+    color: white;
+    cursor: pointer;
+    font-size: 3rem; }
+    .nav i:hover {
+      transform: scale(1.1); }
+  .nav a::after {
+    border-bottom: 1px solid white;
+    content: "";
+    display: block;
+    width: 12rem; }
+
+.title {
+  font-family: Lobster; }
+
+.menu-open {
+  animation-name: menu;
+  animation-duration: 4s;
+  right: 0rem; }
+
+#show-bars {
+  position: fixed;
+  top: 3rem;
+  right: 7rem;
+  color: white;
+  font-size: 4rem;
+  cursor: pointer; }
+
+@keyframes move {
+  0% {
+    right: -16rem; }
+  100% {
+    right: 0rem; } }
+
+.btn-header {
+  margin-top: 55rem;
+  cursor: pointer;
+  padding: 1.5rem 2rem;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all .2s; }
+  .btn-header p {
+    color: white; }
+  .btn-header i {
+    color: #3b3b3b;
+    font-size: 5rem;
+    margin-top: -2rem;
+    transition: all .2s; }
+  .btn-header:active, .btn-header:hover {
+    transform: scale(1.1) translateY(-3px); }
+    .btn-header:active i, .btn-header:hover i {
+      transform: translateY(5px);
+      color: #FFF; }
+
+.login {
+  position: fixed;
+  top: -50%;
+  left: 50%;
+  width: 60rem;
+  height: 40rem;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.8);
+  transform: translate(-50%, -50%);
+  font-size: 2rem; }
+
+.login-open {
+  top: 50%; }
+
+.login input {
+  font-size: 2rem;
+  border: none; }
+  .login input:focus {
+    outline: none; }
+
+.login-form-pos {
+  margin-top: 10rem;
+  margin-left: 5rem; }
+
+.login-close {
+  text-decoration: none;
+  position: absolute;
+  top: 1rem;
+  right: 3rem;
+  font-size: 4rem;
+  cursor: pointer;
+  color: black;
+  transition: all .3s; }
+  .login-close:link, .login-close:visited {
+    color: black; }
+  .login-close:hover, .login-close:active {
+    text-decoration: none;
+    transform: rotateZ(90deg) scale(1.05); }
+
+.login-group {
+  height: 20%;
+  margin: 4rem 5rem;
+  display: flex;
+  justify-content: space-between; }
+  .login-group input {
+    background: none;
+    border-bottom: 1px solid black;
+    width: 45%;
+    margin-right: 10rem; }
+  .login-group span {
+    transform: translateY(0.5rem); }
+
+.login-btn-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .login-btn-group > * {
+    margin: 2rem; }
+
+.login-btn {
+  padding: .5rem 1.5rem;
+  cursor: pointer;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 3px; }
+
+.signupForm {
+  margin: 0 auto;
+  width: 50%;
+  font-size: 2rem; }
+
+.signup-input {
+  outline: none;
+  border: none;
+  background: #f5f5f5 !important; }
+
+.signup-btn {
+  border: none; }
+  .signup-btn:focus {
+    outline: none; }
+
+header {
+  background: url("../../img/lamborghini_dark-wallpaper-1920x1080.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+#hero-title {
+  font-family: Orbitron;
+  color: #FFF;
+  font-size: 7rem;
+  margin: 2rem;
+  /*ext-decoration: underline;*/
+  letter-spacing: 2px; }
+
+#hero-slogan {
+  font-family: Orbitron;
+  color: #FFF;
+  font-size: 2rem;
+  margin: 6rem;
+  letter-spacing: 2px; }
+
 /*@import "components/main-article";
-@import "components/navbar";
+
 @import "components/features";
 @import "components/footer";
 @import "components/hero-iso";
