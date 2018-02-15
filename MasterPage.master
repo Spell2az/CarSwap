@@ -1,6 +1,8 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
 
 <%@ Register Src="~/UserControls/SignUp.ascx" TagPrefix="uc1" TagName="SignUp" %>
+<%@ Register Src="~/UserControls/Header.ascx" TagPrefix="uc1" TagName="Header" %>
+
 
 
 <!DOCTYPE html>
@@ -13,53 +15,16 @@
         
     </asp:ContentPlaceHolder>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="App_Assets/style/style.css" rel="stylesheet" />
+    <link href="App_Assets/style/css/style.css" rel="stylesheet" />
 </head>
 <body>
 
     <form id="form1" runat="server">
-        
-        <header class="container-fluid">
-    <div class="">
-        
-        <div class="nav-logo">
-            <a class="nav-logo" href="#"><img src="App_Assets/img/car-small.svg"><span>Car Swap</span></a>
-        </div>
-        
-        <ul class="main-nav float-right">
-           
-                
-                <li>
-                    <a href="#">Wishlist</a>
-                </li>
-                <li>
-                    <a href="#">Offers</a>
-                </li>
-                <li><a href="#">Membership</a></li>
-                <li><a href="#">Login</a>
-                    <asp:Panel ID="Panel1" runat="server">
-                        <div>
-                            <label>Email</label>
-                            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-                        </div>
-                        <div>
-                            <label>Password</label>
-                            <asp:TextBox style="background: transparent; color: white; border-radius: 3px;" ID="TextBox2" type="password" runat="server"></asp:TextBox>
-                        </div>
-                        <div>
-                            <asp:Button runat="server" Text="Log-in"/>
-                        </div>
-                        
-                    </asp:Panel>
+        <div class="conainer-fluid">
+            <uc1:Header runat="server" ID="Header" />
 
-                </li>
-                   
-                   
-            </ul>
-        
-        
-    </div>
-    </header> 
+        </div>  
+      
         
     
     
@@ -68,7 +33,7 @@
             
         </asp:ContentPlaceHolder>
         
-        <uc1:SignUp runat="server" ID="SignUp" />
+        <uc1:SignUp runat="server" ID="SignUp"/>
     </div>
         
     </form>

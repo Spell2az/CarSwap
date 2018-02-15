@@ -1,0 +1,43 @@
+﻿@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Lobster");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700");
+/*
+$breakpoint arguments:
+- phone
+- tab-port
+- tab-land
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  /*border-box	The width and height properties (and min/max properties) includes content, padding and border, but not the margin*/
+  box-sizing: inherit; }
+
+/*Setting defaults, all these will be inherited to the child elements*/
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 62em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 48em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 36em) {
+    html {
+      font-size: 45%; } }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  /*font-size: 16px;*/ }
+
+/*@import "components/main-article";
+@import "components/navbar";
+@import "components/features";
+@import "components/footer";
+@import "components/hero-iso";
+@import "components/services";*/
