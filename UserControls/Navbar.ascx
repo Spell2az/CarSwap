@@ -3,7 +3,10 @@
 <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
 <asp:UpdatePanel ID="UpdatePanel1" runat="server">
     <ContentTemplate>
-     <i id="show-bars" class="icon ion-android-menu"></i>
+        <div  id="show-bars" class="hamburger-menu">
+            <i class="icon ion-android-menu"></i>
+        
+        </div>
     <asp:Panel ID="Navigation" CssClass="nav" runat="server" ForeColor="White">
         <%--<a href="#"><span class="title">Car Swap</span></a>--%>
        

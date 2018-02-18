@@ -1,21 +1,22 @@
 ﻿.btn-header{
-    margin-top:55rem;
-    
-    
+   
     cursor:pointer;
     
     padding: 1.5rem 2rem;
-    font-size: 2rem;
+    font-size: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: all .2s;
+    
+    width:100%;
+    
     & p {
-        color: white;
+        color: $color-font-primary;
     }
 
     & i{
-        color: #3b3b3b;
+        color: $color-down-arrow;
         font-size: 5rem;
         margin-top: -2rem;
         transition: all .2s;
@@ -27,7 +28,7 @@
         
         & i {
             transform: translateY(5px);
-            color: #FFF;
+            color: $color-font-primary;
         }
     }
 }  

@@ -32,11 +32,14 @@
                 <uc1:Navbar runat="server" id="Navbar" />
                 
                 <h1 id="hero-title">Car Swap</h1>
-                <h3 id="hero-slogan">Build your dream car colleciton with us.</h3>
-                <a  class="btn-header">
-                    <p>Find out more</p>
-                    <i class="icon ion-ios-arrow-down"></i>
-                </a>
+                <h3 id="hero-slogan">Build your dream car collection with us.</h3>
+                <div class="btn-header-wrapper">
+                    <a  class="btn-header">
+                        <p>Find out more</p>
+                        <i class="icon ion-ios-arrow-down"></i>
+                    </a>
+                </div>
+
                 <uc1:Loginform runat="server" ID="Loginform" />
             </header>
 
@@ -53,6 +56,15 @@
        
     </div>
         <uc1:SignUp runat="server" ID="SignUp"/>
+        <hr />
+        <footer>
+            <ul class="footer-list">
+                <li>About</li>
+                <li>Terms &amp; Conditions</li>
+                <li>Contact</li>
+                <li>Legal</li>
+            </ul>
+        </footer>
     </form>
 </div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
