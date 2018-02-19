@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Lobster");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Orbitron:400,500,700");
+/*
+$breakpoint arguments:
+- phone
+- tab-port
+- tab-land
+*/
+/*//----------Colors------------------
+
+$color-font-primary: #fff;
+$color-font-secondary: rgb(33, 37, 41);
+
+
+$color-input-bg: #f5f5f5;
+$color-input-border: #000;
+
+$color-nav-bg: rgba(0,0,0,0.65);
+$color-nav-text-default: #ccc;
+
+$color-form-btn: rgba(0, 0, 0, 0.7);
+$color-form-bg: rgba(255,255,255,0.8);
+
+$color-down-arrow: rgb(59, 59, 59);
+
+//-----------Background image URL
+
+$url-img-bg-header: "../../img/lamborghini_dark-wallpaper-1920x1080.jpg";*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  /*border-box	The width and height properties (and min/max properties) includes content, padding and border, but not the margin*/
+  box-sizing: inherit; }
+
+/*Setting defaults, all these will be inherited to the child elements*/
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 62em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 48em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 36em) {
+    html {
+      font-size: 45%; } }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 400;
+  /*font-size: 16px;*/ }
+
+.btn-header {
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all .2s;
+  width: 100%; }
+  .btn-header p {
+    color: #222; }
+  .btn-header i {
+    color: #3b3b3b;
+    font-size: 5rem;
+    margin-top: -2rem;
+    transition: all .2s; }
+  .btn-header:active, .btn-header:hover {
+    transform: scale(1.1) translateY(-3px); }
+    .btn-header:active i, .btn-header:hover i {
+      transform: translateY(5px);
+      color: #222; }
+
+.cars-heading {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 5rem; }
+
+.table {
+  max-width: 900px;
+  margin: 0 auto;
+  border: none !important; }
+  .table th {
+    border: none; }
+  .table td {
+    border: none !important; }
+
+.cars {
+  margin-top: 15rem; }
+
+.table-image {
+  width: 200px;
+  height: auto;
+  border-radius: 2px; }
+
+th, td {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 2rem; }
+
+.rowStyle {
+  text-align: center;
+  vertical-align: middle; }
+
+footer {
+  color: #808080; }
+  footer .footer-list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none; }
+    footer .footer-list > * {
+      font-size: 1.5rem;
+      margin: 2rem;
+      display: block;
+      cursor: pointer; }
+
+.login {
+  position: fixed;
+  top: -50%;
+  left: 50%;
+  width: 60rem;
+  height: 40rem;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.8);
+  transform: translate(-50%, -50%);
+  font-size: 2rem; }
+
+.login-open {
+  top: 50%; }
+
+.login input {
+  font-size: 2rem;
+  border: none; }
+  .login input:focus {
+    outline: none; }
+
+.login-form-pos {
+  margin-top: 10rem;
+  margin-left: 5rem; }
+
+.login-close {
+  text-decoration: none;
+  position: absolute;
+  top: 1rem;
+  right: 3rem;
+  font-size: 4rem;
+  cursor: pointer;
+  color: black;
+  transition: all .3s; }
+  .login-close:link, .login-close:visited {
+    color: black; }
+  .login-close:hover, .login-close:active {
+    text-decoration: none;
+    transform: rotateZ(90deg) scale(1.05); }
+
+.login-group {
+  height: 3rem;
+  margin: 4rem 5rem;
+  display: flex;
+  justify-content: space-between; }
+  .login-group input {
+    background: none;
+    border-bottom: 1px solid #000;
+    width: 45%;
+    margin-right: 10rem; }
+  .login-group span {
+    transform: translateY(0.5rem); }
+
+.login-btn-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .login-btn-group > * {
+    margin: 2rem; }
+
+.login-btn {
+  padding: .5rem 1.5rem;
+  cursor: pointer;
+  color: #222;
+  background: rgba(255, 255, 255, 0.65);
+  border-radius: 3px;
+  border: 1px #333 solid !important;
+  transition: all .1s; }
+  .login-btn:hover {
+    transform: scale(1.01);
+    box-shadow: 6px 7px 24px -9px #828282; }
+
+.nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  right: -16rem;
+  top: 5rem;
+  width: 16rem;
+  margin: 0 auto;
+  transition: all 0.2s;
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 2px;
+  z-index: 101;
+  /*animation-name: menu;
+    animation-duration: 4s;*/
+  /*border-bottom: 1px solid white;*/
+  /*&::after{
+        content: "";
+        border-bottom: 1px solid white;
+        display:block;
+        width: 100%;
+        position: absolute;
+        top: 6rem;
+    }*/ }
+  .nav a:link,
+  .nav a:visited {
+    text-decoration: none;
+    color: #3b3b3b;
+    display: block;
+    font-size: 1.6rem;
+    margin: 2rem 4rem;
+    transition: all 0.2s; }
+  .nav a:hover,
+  .nav a:active {
+    color: #222;
+    transform: scale(1.05); }
+  .nav i {
+    position: absolute;
+    color: #222;
+    cursor: pointer;
+    font-size: 4rem;
+    transition: all 0.2s;
+    left: .6rem; }
+    .nav i:hover {
+      transform: scale(1.1); }
+  .nav a::after {
+    border-bottom: 1px solid #222;
+    content: "";
+    display: block;
+    width: 12rem; }
+
+.title {
+  font-family: Lobster; }
+
+.menu-open {
+  animation-name: menu;
+  animation-duration: 4s;
+  right: 0rem; }
+
+.hamburger-menu {
+  z-index: 101;
+  position: fixed;
+  top: 3rem;
+  right: 7rem;
+  color: #3b3b3b;
+  font-size: 4rem;
+  cursor: pointer;
+  width: 6rem;
+  height: 6rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 50%;
+  transition: all .2s;
+  border: solid 1px #000; }
+  .hamburger-menu:hover {
+    color: #222;
+    border-color: rgba(59, 59, 59, 0.5); }
+  .hamburger-menu i {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+
+@keyframes move {
+  0% {
+    right: -16rem; }
+  100% {
+    right: 0rem; } }
+
+.signupForm {
+  margin: 20rem auto;
+  width: 50%;
+  font-size: 2rem;
+  padding: 5rem 0 2rem 0;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  box-shadow: 6px 7px 24px -9px rgba(130, 130, 130, 0.3); }
+
+.signup-input {
+  outline: none;
+  border: none;
+  background: #f5f5f5 !important; }
+
+.signup-btn {
+  border: solid 1px #333; }
+  .signup-btn:focus {
+    outline: none; }
+
+header {
+  background: url("../../img/lamborghini_aventador-wallpaper-1920x1080.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed; }
+
+#hero-title {
+  font-family: Orbitron;
+  color: #222;
+  font-size: 7rem;
+  margin: 0 auto;
+  /*ext-decoration: underline;*/
+  letter-spacing: 2px;
+  display: block;
+  position: relative;
+  text-align: center; }
+
+#hero-slogan {
+  font-family: Orbitron;
+  color: #222;
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 2px;
+  display: block;
+  position: relative;
+  top: 10%; }
+
+.btn-header-wrapper {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  width: 20%;
+  transform: translateX(-50%); }
+
+/*@import "components/main-article";
+
+@import "components/features";
+@import "components/footer";
+@import "components/hero-iso";
+@import "components/services";*/

@@ -1,0 +1,44 @@
+﻿.cars-heading{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.table{
+    max-width: 900px;
+    margin: 0 auto;
+    border: none !important;
+
+    & th{
+        border: none;
+
+       
+    }
+     & td {
+            border: none !important;
+            
+        }
+}
+
+.cars{
+    margin-top:15rem;
+}
+
+.table-image{
+    width: 200px;
+    height: auto;
+    border-radius: 2px;
+}
+
+th,td{
+   
+    text-align:center;
+    vertical-align: middle;
+    font-size: 2rem;
+   
+}
+
+.rowStyle{
+    text-align:center;
+    vertical-align: middle;
+}

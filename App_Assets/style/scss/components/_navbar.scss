@@ -1,0 +1,114 @@
+﻿.nav {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    position:fixed;
+    right: -16rem;
+    top: 5rem;
+    width:16rem;
+    margin: 0 auto;
+    transition: all 0.2s;
+    background: $color-nav-bg;
+    border-radius: 2px;
+    z-index:101;
+    /*animation-name: menu;
+    animation-duration: 4s;*/
+    /*border-bottom: 1px solid white;*/
+
+    & a:link,
+    & a:visited {
+        text-decoration: none;
+        color: $color-nav-text-default;
+        display: block;
+        font-size: 1.6rem;
+        margin:2rem 4rem;
+        transition: all 0.2s;
+     }
+
+     
+    & a:hover,
+    & a:active {
+        color: $color-font-primary;
+        transform: scale(1.05);
+     }
+
+    /*&::after{
+        content: "";
+        border-bottom: 1px solid white;
+        display:block;
+        width: 100%;
+        position: absolute;
+        top: 6rem;
+    }*/
+
+    & i {
+        
+    position:absolute;
+    color: $color-font-primary;
+    cursor: pointer;
+    font-size: 4rem;
+    transition: all 0.2s;
+    left: .6rem;
+    &:hover{
+        transform: scale(1.1);
+    }
+    }
+
+    a::after{
+        border-bottom: 1px solid $color-font-primary;
+        content:"";
+        display:block;
+        width: 12rem;
+    }
+}
+
+
+.title{
+    font-family: Lobster;
+}
+
+.menu-open {
+    
+    animation-name: menu;
+    animation-duration: 4s;
+    right: 0rem;
+}
+
+.hamburger-menu{
+    z-index: 101;
+    position: fixed;
+    top: 3rem;
+    right: 7rem;
+    color: $color-nav-text-default;
+    font-size: 4rem;
+    cursor: pointer;
+    width: 6rem;
+    height: 6rem;
+    text-align: center;
+    background: $color-nav-bg;
+    border-radius: 50%;
+    transition: all .2s;
+    border: solid 1px $color-input-border;
+
+    &:hover{
+        color: $color-font-primary;
+        border-color: rgba($color-nav-text-default, .5);
+    }
+
+    & i {
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+
+
+
+@keyframes move {
+    0% { right: -16rem;}
+    100% { right: 0rem; }
+}

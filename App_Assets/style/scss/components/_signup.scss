@@ -1,0 +1,24 @@
+﻿.signupForm{
+    margin: 20rem auto;
+    width: 50%;
+    font-size: 2rem;
+    padding: 5rem 0 2rem 0;
+    border-radius: 3px;
+    border : 1px solid #ccc;
+    box-shadow: 6px 7px 24px -9px rgba(130,130,130,.3);
+    
+}
+
+.signup-input{
+    outline: none;
+    border: none;
+    background: $color-input-bg !important;
+
+    
+}
+.signup-btn{
+    border: solid 1px #333;
+    &:focus{
+        outline: none;
+    }
+}

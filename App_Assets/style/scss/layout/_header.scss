@@ -1,0 +1,46 @@
+﻿header {
+    background: url($url-img-bg-header);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    
+}
+
+
+
+
+#hero-title{
+  
+    font-family: Orbitron;
+    color: $color-font-primary;
+    font-size:7rem;
+    margin:0 auto;
+    /*ext-decoration: underline;*/
+    letter-spacing: 2px;
+    display:block;
+    position: relative;
+    text-align:center;
+}
+
+#hero-slogan{
+   
+    font-family: Orbitron;
+    color: $color-font-primary;
+    font-size:2rem;
+    text-align:center;
+    letter-spacing: 2px;
+    display: block;
+    position: relative;
+    top: 10%;
+}
+
+.btn-header-wrapper{
+    
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    width: 20%;
+    transform: translateX(-50%);
+
+}

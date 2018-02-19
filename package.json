@@ -1,0 +1,22 @@
+{
+  "name": "carswap",
+  "version": "1.0.0",
+  "description": "sass for carswap application",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass App_Assets/style/scss/main.scss App_Assets/style/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Spell2az/CarSwap.git"
+  },
+  "author": "Martin Kovac",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Spell2az/CarSwap/issues"
+  },
+  "homepage": "https://github.com/Spell2az/CarSwap#readme",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}
