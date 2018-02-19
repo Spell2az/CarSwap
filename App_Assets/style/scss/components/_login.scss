@@ -60,11 +60,21 @@
     display: flex;
     justify-content: space-between;
 
+    @include respond(tab-port){
+        margin: 1rem 1rem;
+        flex-direction: column;
+    }
+
     & input {
         background: none;
         border-bottom:1px solid $color-input-border;
         width:45%;
         margin-right: 10rem;
+        
+        @include respond(tab-port){
+            margin: 0;
+            width: 100%;
+        }
     }
 
     & span {

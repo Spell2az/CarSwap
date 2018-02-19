@@ -1,18 +1,21 @@
 ﻿.nav {
     display:flex;
     justify-content: center;
-    flex-direction: column;
-    position:fixed;
-    right: -16rem;
-    top: 5rem;
-    width:16rem;
+    flex-direction: row;
+    background-color: transparent !important;
+
+    @include respond(tab-port){
+        background-color: #dddddd !important;
+    }
+    
+    width:100%;
     margin: 0 auto;
     transition: all 0.2s;
-    background: $color-nav-bg;
+    
     border-radius: 2px;
     /*animation-name: menu;
     animation-duration: 4s;*/
-    /*border-bottom: 1px solid white;*/
+    border-bottom: 1px solid #625858;
 
     & a:link,
     & a:visited {
@@ -20,8 +23,9 @@
         color: $color-nav-text-default;
         display: block;
         font-size: 1.6rem;
-        margin:2rem 4rem;
+        margin:2rem 2rem;
         transition: all 0.2s;
+        font-weight: bold;
      }
 
      
@@ -53,12 +57,7 @@
     }
     }
 
-    a::after{
-        border-bottom: 1px solid $color-font-primary;
-        content:"";
-        display:block;
-        width: 12rem;
-    }
+   
 }
 
 
@@ -73,6 +72,11 @@
     right: 0rem;
 }
 
+.nav-brand{
+    margin: 0 ;
+    font-size:2rem !important;
+    text-transform: uppercase;
+}
 .hamburger-menu{
     z-index: 101;
     position: fixed;
@@ -103,11 +107,23 @@
     }
 }
 
-
+.spacer{
+    flex-grow:40;
+}
 
 
 
 @keyframes move {
     0% { right: -16rem;}
     100% { right: 0rem; }
+}
+
+#icon-menu{
+
+    @include respond(tab-port){
+          width: 2.5rem !important;
+    height: 2.5rem !important;
+    font-size: 2rem;
+    }
+  
 }

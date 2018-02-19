@@ -46,7 +46,7 @@ html {
       font-size: 50%; } }
   @media only screen and (max-width: 36em) {
     html {
-      font-size: 45%; } }
+      font-size: 75% !important; } }
 
 body {
   box-sizing: border-box; }
@@ -58,7 +58,6 @@ body {
 
 .btn-header {
   cursor: pointer;
-  padding: 1.5rem 2rem;
   font-size: 3rem;
   display: flex;
   flex-direction: column;
@@ -134,11 +133,19 @@ footer {
   margin: 4rem 5rem;
   display: flex;
   justify-content: space-between; }
+  @media only screen and (max-width: 48em) {
+    .login-group {
+      margin: 1rem 1rem;
+      flex-direction: column; } }
   .login-group input {
     background: none;
     border-bottom: 1px solid #000;
     width: 45%;
     margin-right: 10rem; }
+    @media only screen and (max-width: 48em) {
+      .login-group input {
+        margin: 0;
+        width: 100%; } }
   .login-group span {
     transform: translateY(0.5rem); }
 
@@ -160,18 +167,15 @@ footer {
 .nav {
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  position: fixed;
-  right: -16rem;
-  top: 5rem;
-  width: 16rem;
+  flex-direction: row;
+  background-color: transparent !important;
+  width: 100%;
   margin: 0 auto;
   transition: all 0.2s;
-  background: rgba(255, 255, 255, 0.55);
   border-radius: 2px;
   /*animation-name: menu;
     animation-duration: 4s;*/
-  /*border-bottom: 1px solid white;*/
+  border-bottom: 1px solid #625858;
   /*&::after{
         content: "";
         border-bottom: 1px solid white;
@@ -180,14 +184,18 @@ footer {
         position: absolute;
         top: 6rem;
     }*/ }
+  @media only screen and (max-width: 48em) {
+    .nav {
+      background-color: #dddddd !important; } }
   .nav a:link,
   .nav a:visited {
     text-decoration: none;
     color: #3b3b3b;
     display: block;
     font-size: 1.6rem;
-    margin: 2rem 4rem;
-    transition: all 0.2s; }
+    margin: 2rem 2rem;
+    transition: all 0.2s;
+    font-weight: bold; }
   .nav a:hover,
   .nav a:active {
     color: #222;
@@ -201,11 +209,6 @@ footer {
     left: .6rem; }
     .nav i:hover {
       transform: scale(1.1); }
-  .nav a::after {
-    border-bottom: 1px solid #222;
-    content: "";
-    display: block;
-    width: 12rem; }
 
 .title {
   font-family: Lobster; }
@@ -214,6 +217,11 @@ footer {
   animation-name: menu;
   animation-duration: 4s;
   right: 0rem; }
+
+.nav-brand {
+  margin: 0;
+  font-size: 2rem !important;
+  text-transform: uppercase; }
 
 .hamburger-menu {
   z-index: 101;
@@ -240,16 +248,28 @@ footer {
     top: 50%;
     transform: translate(-50%, -50%); }
 
+.spacer {
+  flex-grow: 40; }
+
 @keyframes move {
   0% {
     right: -16rem; }
   100% {
     right: 0rem; } }
 
+@media only screen and (max-width: 48em) {
+  #icon-menu {
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    font-size: 2rem; } }
+
 .signupForm {
   margin: 0 auto;
   width: 50%;
   font-size: 2rem; }
+  @media only screen and (max-width: 48em) {
+    .signupForm {
+      width: 100%; } }
 
 .signup-input {
   outline: none;
@@ -266,7 +286,7 @@ header {
   background-size: cover;
   background-position: center;
   height: 100vh;
-  background-attachment: fixed; }
+  width: 100%; }
 
 #hero-title {
   font-family: Orbitron;
@@ -293,8 +313,10 @@ header {
   position: absolute;
   bottom: 2%;
   left: 50%;
-  width: 20%;
   transform: translateX(-50%); }
+  @media only screen and (max-width: 48em) {
+    .btn-header-wrapper {
+      width: 100%; } }
 
 /*@import "components/main-article";
 

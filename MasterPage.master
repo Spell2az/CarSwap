@@ -25,13 +25,13 @@
     <link href="App_Assets/style/css/style.css" rel="stylesheet" runat="server"/>
 </head>
 <body>
-<div class="conainer-fluid">
+<div class="container">
     <form id="form1" runat="server">
-        
+        <div class="row">
             <header>
                 <uc1:Navbar runat="server" id="Navbar" />
                 
-                <h1 id="hero-title">Car Swap</h1>
+                
                 <h3 id="hero-slogan">Build your dream car collection with us.</h3>
                 <div class="btn-header-wrapper">
                     <a  class="btn-header">
@@ -42,7 +42,7 @@
 
                 <uc1:Loginform runat="server" ID="Loginform" />
             </header>
-
+        </div>
   
       
         

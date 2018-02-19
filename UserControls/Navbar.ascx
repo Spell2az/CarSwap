@@ -3,23 +3,24 @@
 <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
 <asp:UpdatePanel ID="UpdatePanel1" runat="server">
     <ContentTemplate>
-        <div  id="show-bars" class="hamburger-menu">
-            <i class="icon ion-android-menu"></i>
-        
-        </div>
-    <asp:Panel ID="Navigation" CssClass="nav" runat="server" ForeColor="White">
+       
+    <asp:Panel ID="Navigation" CssClass="nav navbar navbar-expand-lg navbar-light" runat="server" >
         <%--<a href="#"><span class="title">Car Swap</span></a>--%>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span id="icon-menu" class="navbar-toggler-icon "></span>
+        </button>
        
-       
-         <i id="hide-arrow" class="icon ion-ios-arrow-right" ></i>
-        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto">
+         <a class="nav-brand" href="#">Car Swap</a>
+        <div class="spacer"></div>
         <a href="#">Wishlist</a>
         <a href="#">Offers</a>
         <a href="#">Membership</a>
         <a href="#" id="loginOpen">Login</a>
         <a href="#signUp">Signup</a>
-        
-        
+        </div>
+        </div>
     </asp:Panel>
     </ContentTemplate>
 </asp:UpdatePanel>

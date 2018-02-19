@@ -3,6 +3,10 @@
     width: 50%;
     font-size: 2rem;
 
+    @include respond(tab-port){
+        width: 100%;
+    }
+
     
 }
 
