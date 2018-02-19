@@ -58,7 +58,7 @@ body {
 
 .btn-header {
   cursor: pointer;
-  padding: 1.5rem 2rem;
+  padding: 0.5rem 2rem;
   font-size: 3rem;
   display: flex;
   flex-direction: column;
@@ -77,6 +77,37 @@ body {
     .btn-header:active i, .btn-header:hover i {
       transform: translateY(5px);
       color: #222; }
+
+.cars-heading {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 5rem; }
+
+.table {
+  max-width: 900px;
+  margin: 0 auto;
+  border: none !important; }
+  .table th {
+    border: none; }
+  .table td {
+    border: none !important; }
+
+.cars {
+  margin-top: 15rem; }
+
+.table-image {
+  width: 200px;
+  height: auto;
+  border-radius: 2px; }
+
+th, td {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 2rem; }
+
+.rowStyle {
+  text-align: center;
+  vertical-align: middle; }
 
 footer {
   color: #808080; }
@@ -130,7 +161,7 @@ footer {
     transform: rotateZ(90deg) scale(1.05); }
 
 .login-group {
-  height: 20%;
+  height: 3rem;
   margin: 4rem 5rem;
   display: flex;
   justify-content: space-between; }
@@ -155,7 +186,11 @@ footer {
   color: #222;
   background: rgba(255, 255, 255, 0.65);
   border-radius: 3px;
-  border: 1px #333 solid !important; }
+  border: 1px #333 solid !important;
+  transition: all .1s; }
+  .login-btn:hover {
+    transform: scale(1.01);
+    box-shadow: 6px 7px 24px -9px #828282; }
 
 .nav {
   display: flex;
@@ -169,6 +204,7 @@ footer {
   transition: all 0.2s;
   background: rgba(255, 255, 255, 0.55);
   border-radius: 2px;
+  z-index: 101;
   /*animation-name: menu;
     animation-duration: 4s;*/
   /*border-bottom: 1px solid white;*/
@@ -247,9 +283,13 @@ footer {
     right: 0rem; } }
 
 .signupForm {
-  margin: 0 auto;
+  margin: 20rem auto;
   width: 50%;
-  font-size: 2rem; }
+  font-size: 2rem;
+  padding: 5rem 0 2rem 0;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  box-shadow: 6px 7px 24px -9px rgba(130, 130, 130, 0.3); }
 
 .signup-input {
   outline: none;

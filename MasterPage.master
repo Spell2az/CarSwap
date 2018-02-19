@@ -4,6 +4,8 @@
 
 <%@ Register Src="~/UserControls/Navbar.ascx" TagPrefix="uc1" TagName="Navbar" %>
 <%@ Register Src="~/UserControls/Login-form.ascx" TagPrefix="uc1" TagName="Loginform" %>
+<%@ Register Src="~/UserControls/Cars.ascx" TagPrefix="uc1" TagName="Cars" %>
+
 
 
 
@@ -34,7 +36,7 @@
                 <h1 id="hero-title">Car Swap</h1>
                 <h3 id="hero-slogan">Build your dream car collection with us.</h3>
                 <div class="btn-header-wrapper">
-                    <a  class="btn-header">
+                    <a href="#goToCars" class="btn-header">
                         <p>Find out more</p>
                         <i class="icon ion-ios-arrow-down"></i>
                     </a>
@@ -52,7 +54,7 @@
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
             
         </asp:ContentPlaceHolder>
-        
+        <uc1:Cars runat="server"  ID="Cars" />
        
     </div>
         <uc1:SignUp runat="server" ID="SignUp"/>

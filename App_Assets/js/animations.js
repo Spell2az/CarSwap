@@ -33,5 +33,14 @@ function openMenuHandler () {
 
 function closeMenuHandler() {
     $('.nav').removeClass('menu-open');
-    $("#show-bars").show("slow", function() {});
+    $("#show-bars").show("slow", function () { });
+
 }
+
+
+//$(document).ready(function() {
+//    // Fix up GridView to support THEAD tags            
+//    $("#Cars_GridView1 tbody").before("<thead><tr></tr></thead>");
+//    $("#Cars_GridView1 thead tr").append($("#Cars_GridView1 th"));
+//    $("#Cars_GridView1 tbody tr:first").remove();
+//})

@@ -54,7 +54,7 @@
 
 
 .login-group{
-    height: 20%;
+    height: 3rem;
     margin: 4rem 5rem;
    
     display: flex;
@@ -93,4 +93,9 @@
         background: $color-form-btn;
         border-radius: 3px;
         border: 1px #333 solid !important;
+        transition:all .1s;
+        &:hover{
+            transform: scale(1.01);
+            box-shadow: 6px 7px 24px -9px rgba(130,130,130,1);
+        }
     }
