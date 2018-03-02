@@ -7,14 +7,14 @@
         </a>
         <div class="login-group">
             <asp:Label runat="server">Email</asp:Label>
-            <asp:TextBox type="email" ID="TextBox2" runat="server"></asp:TextBox>
+            <asp:TextBox type="email" ID="txtEmail" runat="server"></asp:TextBox>
         </div>
         <div class="login-group">
             <asp:Label runat="server">Password</asp:Label>
-            <asp:TextBox type="password" ID="TextBox1" runat="server"></asp:TextBox>
+            <asp:TextBox type="password" ID="txtPassword" runat="server"></asp:TextBox>
         </div>
         <div class="login-btn-group">
-            <asp:Button ID="Button2" CssClass="login-btn" runat="server" Text="Login" />
+            <asp:Button ID="Button2" CssClass="login-btn" runat="server" Text="Login" OnClick="Button2_Click" />
             <asp:Button ID="Button1"  CssClass="login-btn" runat="server" Text="Resend Password" />
         </div>
         
