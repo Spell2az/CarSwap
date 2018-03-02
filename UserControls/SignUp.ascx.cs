@@ -11,4 +11,10 @@ public partial class UserControls_WebUserControl : System.Web.UI.UserControl
     {
 
     }
+
+    protected void Button3_OnClick(object sender, EventArgs e)
+    {
+        var security = new Security();
+        security.SignUp(txtEmail.Text, txtPassword.Text, txtPassword.Text, txtFirstName.Text, txtLastName.Text);
+    }
 }
