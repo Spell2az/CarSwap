@@ -105,6 +105,10 @@ th, td {
   text-align: center;
   vertical-align: middle; }
 
+.search-boxes-row {
+  max-width: 100rem;
+  margin: 10rem auto 5rem auto; }
+
 footer {
   color: #212529; }
   footer .footer-list {
@@ -187,6 +191,10 @@ footer {
   .login-btn:hover {
     transform: scale(1.01);
     box-shadow: 6px 7px 24px -9px #828282; }
+
+.login-message {
+  color: red;
+  text-align: center; }
 
 .nav {
   display: flex;

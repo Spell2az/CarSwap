@@ -20,7 +20,11 @@ public partial class UserControls_Login_form : System.Web.UI.UserControl
         var password = txtPassword.Text;
         if (security.Login(email, password))
         {
-           // FormsAuthentication.
+            FormsAuthentication.RedirectFromLoginPage(email, false);
+        }
+        else
+        {
+            lblLoginMessage.Text = "Invalid credentials. Please try again.";
         }
     }
 }
