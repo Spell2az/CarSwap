@@ -4,7 +4,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <h1>You are logged in!!!</h1>
-    <asp:LinkButton href="CarSearch.aspx" ID="LinkButton1" runat="server">Go To Search Cars</asp:LinkButton>
+    
+   
+    <asp:LinkButton href="CarSearch.aspx" ID="LinkButton1"  runat="server">Go To Search Cars</asp:LinkButton>
 </asp:Content>
 
 

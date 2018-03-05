@@ -21,6 +21,8 @@ public partial class UserControls_Login_form : System.Web.UI.UserControl
         if (security.Login(email, password))
         {
             FormsAuthentication.RedirectFromLoginPage(email, false);
+            Session["user"] = email;
+
         }
         else
         {

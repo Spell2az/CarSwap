@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DataConnection">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAEIAAABAAAAEwAUAAAAAQCCAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\DataConnection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Security">
+    <Position X="6" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAQQAIAAAA=</HashCode>
+      <FileName>App_Code\Security.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarCollection">
+    <Position X="3" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAQAAAAACAAAAAAAAAAAAAAAAAEAAAAIAAAA=</HashCode>
+      <FileName>App_Code\CarCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Car">
+    <Position X="1" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACABAAgAAAAAAAAAACAAAAAABAABAgAAAIAAAA=</HashCode>
+      <FileName>App_Code\Car.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WishlistEntry">
+    <Position X="3" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAABAAAAAAAAAAAAAgAAAAAAAAAAAgAAAIAAAA=</HashCode>
+      <FileName>App_Code\WishlistEntry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Offer">
+    <Position X="5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAACAAAAAAABAAAAAIAAAAAA=</HashCode>
+      <FileName>App_Code\Offer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

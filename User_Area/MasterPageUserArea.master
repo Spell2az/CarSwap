@@ -13,14 +13,28 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div class="row">
-            <asp:Button runat="server" ID="btnSignOut" Text="Sign Out" OnClick="btnSignOut_OnClick"/>
-        </div>
+       
+        
+
+        <ul class="nav-user">
+            <li> <asp:Label ID="lblUserName" runat="server" Text="Label"></asp:Label></li>
+            <li>
+    <asp:LinkButton ID="lbtnMyCars" OnClick="lbtnMyCars_OnClick" runat="server">My Cars</asp:LinkButton></li>
+            <li>
+        <asp:LinkButton ID="LinkButton2" runat="server">My Wishlist</asp:LinkButton></li>
+            <li>
+            <asp:LinkButton ID="LinkButton3" runat="server">Profile</asp:LinkButton></li>
+            
+
+            <li><asp:Button runat="server" ID="btnSignOut" Text="Sign Out" OnClick="btnSignOut_OnClick"/></li>
+            
+        </ul>
     <div>
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
     </div>
+      
     </form>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

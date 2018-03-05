@@ -305,6 +305,16 @@ footer {
   .signup-btn:focus {
     outline: none; }
 
+.nav-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px; }
+  .nav-user > * {
+    display: block;
+    font-size: 2rem;
+    margin: 0 2rem; }
+
 header {
   background: url("../../img/lamborghini_dark-wallpaper-1920x1080.jpg");
   background-size: cover;

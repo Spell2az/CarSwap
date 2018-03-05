@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using System.Web;
 
 
 /// <summary>
@@ -63,5 +60,10 @@ public class Security
         dc.Execute("sproc_CheckUser");
 
         return dc.Count == 1;
+    }
+
+    public void UpdatePassword()
+    {
+        throw new System.NotImplementedException();
     }
 }
